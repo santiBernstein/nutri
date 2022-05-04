@@ -154,7 +154,7 @@ img{
 @media screen and (max-width: 768px){
     .nav--menu{
         position: fixed;
-        top: var(--header-height);
+        top: -100%;
         left: 0;
         width: 100%;
         padding-top: 1.5rem;
@@ -184,4 +184,8 @@ img{
     cursor: pointer;
 }
 
+/* show menu */
 
+.show-menu{
+    top: var(--header-height);
+}
