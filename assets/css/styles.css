@@ -244,11 +244,11 @@ img{
     visibility: hidden;
 }
 .scrolltop:hover{
-    background-color: var(--first-color);
+    background-color: var(--first-color-lighten);
 }
 .scrolltop--icon{
     font-size: 2rem;
-    color: var(--first-color-lighten);
+    color: var(--first-color-light);
 }
 
 /*show scroll top*/
@@ -335,4 +335,52 @@ img{
 .about--description{
     font-size: var(--h2-font-size);
     font-weight: var(--font-semi-bold);    
+}
+
+/*services*/
+.services--data{
+    padding: 3rem 1rem;
+    background-color: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    transition: .4s;
+    box-shadow: 0 4px 6px rgba(174, 190,205,.3);
+}
+.services--icon, .services--title{
+    margin-bottom: var(--mb-2);
+    color: var(--text-color);
+}
+.services--icon{
+    font-size: 3rem;
+}
+.services--title{
+    font-size: var(--h3-font-size);
+}
+.services--description{
+    margin-bottom: var(--mb-4);
+}
+.services--data:hover{
+    transform: translateY(-.5rem);
+    box-shadow: 0 6px 8px rgba(174, 190,205,.4);
+}
+
+/*project*/
+.project--container{
+    padding: 1.5rem 1rem;
+    background-color: #4B6949;
+    color: var(--first-color-light);
+    border-radius: .5rem;
+    text-align: center;
+}
+.project--title{
+    margin-bottom: var(--mb-1);
+    font-size: 1.5rem;
+}
+.project--icon{
+    font-size: 1.8rem;
+    font-weight: var(--font-bold);
+    color: var(--first-color-lighten);
+}
+.button-project:hover{
+    background-color: var(--first-color-light);
 }
