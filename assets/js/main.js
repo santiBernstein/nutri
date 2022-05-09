@@ -68,5 +68,25 @@ function scrollTop(){
 }
 window.addEventListener('scroll', scrollTop)
 
+//swiper
 
-
+const swiper = new Swiper('.swiper', {
+    
+    spaceBetween: 16,
+    loop: false,
+    grabCursor: true,
+  
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints:{
+        640:{
+            slidesPerView: 2,
+        },        
+        1024:{
+            slidesPerView: 3,
+        },
+    },     
+   
+  });

@@ -377,10 +377,36 @@ img{
     font-size: 1.5rem;
 }
 .project--icon{
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: var(--font-bold);
     color: var(--first-color-lighten);
 }
+.button-project{
+    background-color: var(--first-color-light);
+}
 .button-project:hover{
+    background-color: var(--first-color);
+}
+
+/*recipe*/
+.recipe--content{
+    display: grid;
+    background-color: var(--text-color);
+    color: var(--first-color-light);
+    border-radius: .5rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(47, 10, 13, .25);
+}
+.recipe--img{   
+    border-radius: .5rem;
+    justify-self: center;
+    margin-bottom: var(--mb-1);
+}
+
+.swiper-pagination{
+    position: initial;
+}
+.swiper-pagination-bullet-active{
     background-color: var(--first-color-light);
 }

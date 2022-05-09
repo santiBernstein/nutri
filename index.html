@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!-- boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/styles.css">   
+
     <title>MHnutricion</title>
 </head>
 <body>
@@ -26,7 +31,7 @@
                     <li class="nav--item"><a href="#home" class="nav--link active-link">Inicio</a></li>
                     <li class="nav--item"><a href="#about" class="nav--link">Nosotras</a></li>
                     <li class="nav--item"><a href="#services" class="nav--link">Servicios</a></li>
-                    <li class="nav--item"><a href="#portfolio" class="nav--link">Recetarios</a></li>
+                    <li class="nav--item"><a href="#recipe" class="nav--link">Recetarios</a></li>
                     <li class="nav--item"><a href="#contact" class="nav--link">Contacto</a></li>
                 </ul>
 
@@ -140,10 +145,40 @@
             </div>
         </section>
 
+        <section class="recipe section bd-container" id="recipe">
+            <span class="section-subtitle">Planes de Alimentacion</span>
+            <h2 class="section-title">Recetario</h2>
+
+            <div class="recipe--container swiper-container swiper">
+                <div class="swiper-wrapper">
+                    <div class="recipe--content swiper-slide">
+                        <img src="assets/img/recetario.png" alt="recetario" class="recipe--img">
+                        <h3 class="recipe--title">Recetario N1</h3>
+                    </div>
+
+                    <div class="recipe--content swiper-slide">
+                        <img src="assets/img/plan-basico.png" alt="plan-basico" class="recipe--img">
+                        <h3 class="recipe--title">Plan Basico</h3>
+                    </div>
+
+                    <div class="recipe--content swiper-slide">
+                        <img src="assets/img/4x3.png" alt="4x3" class="recipe--img">
+                        <h3 class="recipe--title">Plan 4x3</h3>
+                    </div>
+
+                    <div class="recipe--content swiper-slide">
+                        <img src="assets/img/6x4.png" alt="6x4" class="recipe--img">
+                        <h3 class="recipe--title">Plan 6x4</h3>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
     </main>
     
 
-
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
