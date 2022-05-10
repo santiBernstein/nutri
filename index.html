@@ -221,20 +221,20 @@
                     </div>
                 </div>
 
-                <form action="#" class="contact--form">
+                <form action="#" class="contact--form" id="contact-form">
                     <div class="contact--inputs">
-                        <input type="text" placeholder="Nombre" class="contact--input">
-                        <input type="text" placeholder="Apellido" class="contact--input">
+                        <input type="text" placeholder="Nombre" class="contact--input name" required>
+                        <input type="text" placeholder="Apellido" class="contact--input lastname" required>
                     </div>
 
                     <div class="contact--inputs">
-                        <input type="email" placeholder="Email" class="contact--input">
-                        <input type="number" placeholder="Telefono" class="contact--input">
+                        <input type="email" placeholder="Email" class="contact--input email" required>
+                        <input type="number" placeholder="Telefono" class="contact--input phone" required>
                     </div>
 
-                    <textarea class="contact--input" placeholder="Mensaje" name="" id="" cols="0" rows="7"></textarea>
+                    <textarea class="contact--input msg" placeholder="Mensaje" name="" id="" cols="0" rows="7" required></textarea>
 
-                    <input type="submit" value="Enviar" class="button contact--button">
+                    <input type="submit" value="Enviar" class="button contact--button send">
                 </form>
             </div>
         </section>
@@ -257,6 +257,19 @@
         
     </main>
     
+
+
+    <!-- emailjs -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- sweet alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("O9ElxHQx_6t7se_bT");
+    })();
+    </script>
+
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>

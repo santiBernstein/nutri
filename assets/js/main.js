@@ -122,7 +122,7 @@ sr.reveal('.home--social-icon, .home--name',{interval: 200})
 sr.reveal('.section-title',{})
 sr.reveal('.section-subtitle',{delay: 200})
 sr.reveal('.about--data',{delay: 400})
-sr.reveal('.about-content',{delay: 500})
+sr.reveal('.about-content',{delay: 400})
 
 //sr services//
 sr.reveal('.services--subtitle',{})
@@ -134,8 +134,8 @@ sr.reveal('.services--icon',{delay: 400})
 //project//
 sr.reveal('.project--title',{interval: 200})
 
-//recipe//
-sr.reveal('.recipe--content',{interval: 100})
+// //recipe//
+// sr.reveal('.recipe--content',{interval: 100})
 
 //contact//
 sr.reveal('.contact--box',{interval: 100})
@@ -144,5 +144,50 @@ sr.reveal('.contact--description',{interval: 500})
 sr.reveal('.contact--icon',{interval: 400})
 sr.reveal('.contact--input',{interval: 200})
 
+// email js
+
+function validate(){
+    let name = document.querySelector('.name')
+    let lastname = document.querySelector('.lastname')
+    let email = document.querySelector('.email')
+    let phone = document.querySelector('.phone')
+    let msg = document.querySelector('.msg')
+    let send = document.querySelector('.send')
+
+    send.addEventListener('click', (e)=>{
+        e.preventDefault();
+        if(name.value == "" || lastname.value == "" || phone.value == "" || email.value == "" || msg.value == "" ){
+            emptyerror();
+        } else {
+            sendmail (name.value, lastname.value, phone.value, email.value, msg.value);
+            success();
+        }
+    })
+}
+validate();
+
+function sendmail(name,email,msg){
+    emailjs.send("service_hhgfggb","template_15qfmgu",{
+        from_name: email,
+        to_name: name,
+        message: msg,
+        });
+}
+
+function emptyerror(){
+    swal({
+        title: "Oh No....!",
+        text: "Los campos no pueden estar vacios!",
+        icon: "error",        
+      });
+}
+
+function success(){
+    swal({
+        title: "Mensaje Enviado!",
+        text: "Te contestamos lo antes posible!",
+        icon: "success",        
+      });
+}
 
 
