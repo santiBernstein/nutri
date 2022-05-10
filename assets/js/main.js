@@ -90,3 +90,59 @@ const swiper = new Swiper('.swiper', {
     },     
    
   });
+
+  //gsap animation
+
+  //home
+// gsap.from('.home--img', {opacity: 0, duration: 3, delay: .5, x:60})
+// gsap.from('.home--data', {opacity: 0, duration: 3, delay: .8, y:25})
+// gsap.from('.home--greeting', {opacity: .2, duration: 4, delay: 1, y:25, ease:'expo.out', stagger:.2}) 
+// gsap.from('.home--name', {opacity: .8, duration: 4, delay: 1, y:25, ease:'expo.out', stagger:.2}) 
+// gsap.from('.home--social', {opacity: 0, duration: 10, delay: 2, y:50, ease:'expo.out', stagger:.2}) 
+//   //nav
+// gsap.from('.nav--logo, .nav--toggle', {opacity: 0, duration: 10, delay: 1.5, y:25, ease:'expo.out', stagger:.2}) 
+// gsap.from('.nav--item', {opacity: 0, duration: 5, delay: 10, y:25, ease:'expo.out', stagger:.2}) 
+
+// scroll reveal animation //
+
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '80px',
+    duration: 2000,
+    reset: true
+})
+
+//sr home //
+sr.reveal('.home--img',{})
+sr.reveal('.button',{delay: 200})
+sr.reveal('.home--data',{delay: 400})
+sr.reveal('.home--social-icon, .home--name',{interval: 200})
+
+//sr about //
+sr.reveal('.section-title',{})
+sr.reveal('.section-subtitle',{delay: 200})
+sr.reveal('.about--data',{delay: 400})
+sr.reveal('.about-content',{delay: 500})
+
+//sr services//
+sr.reveal('.services--subtitle',{})
+sr.reveal('.services--title',{delay: 200})
+sr.reveal('.services--data',{interval: 200})
+sr.reveal('.services--description',{delay: 400})
+sr.reveal('.services--icon',{delay: 400})
+
+//project//
+sr.reveal('.project--title',{interval: 200})
+
+//recipe//
+sr.reveal('.recipe--content',{interval: 100})
+
+//contact//
+sr.reveal('.contact--box',{interval: 100})
+sr.reveal('.contact--title',{interval: 150})
+sr.reveal('.contact--description',{interval: 500})
+sr.reveal('.contact--icon',{interval: 400})
+sr.reveal('.contact--input',{interval: 200})
+
+
+

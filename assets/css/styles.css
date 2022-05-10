@@ -373,7 +373,7 @@ img{
     margin-bottom: var(--mb-4);
 }
 .services--data:hover{
-    transform: translateY(-.5rem);
+    transform: translateY(-.9rem);
     box-shadow: 0 6px 8px rgba(174, 190,205,.4);
 }
 
