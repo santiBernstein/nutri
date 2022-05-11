@@ -449,6 +449,9 @@ img{
     font-size: var(--h3-font-size);
     margin: var(--mb-1) 0;
 }
+.contact--description-mail{
+    font-size: var(--smaller-font-size);
+}
 .contact--social{
     color: var(--first-color-light);
     font-size: 1.25rem;
