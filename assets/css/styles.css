@@ -190,7 +190,7 @@ img{
 .nav--close{
     font-size: 2.5rem;
     cursor: pointer;
-    /*position: absolute;*/
+    position: absolute;
     top: 5px;
     right: .7rem;
 }
@@ -357,7 +357,7 @@ img{
     border-radius: .5rem;
     text-align: center;
     transition: .4s;
-    box-shadow: 0 4px 6px rgba(174, 190,205,.3);
+    box-shadow: 0 8px 8px #4B6949;
 }
 .services--icon, .services--title{
     margin-bottom: var(--mb-2);
@@ -373,17 +373,23 @@ img{
     margin-bottom: var(--mb-4);
 }
 .services--data:hover{
-    transform: translateY(-.9rem);
-    box-shadow: 0 6px 8px rgba(174, 190,205,.4);
+    transform: translateY(-.1rem);
+    box-shadow: 0 6px 8px #4682B4;
 }
 
 /*project*/
+.project{
+    width: 70%;
+    margin: auto;
+    padding-top: 1.5rem;
+}
 .project--container{
-    padding: 1.5rem 1rem;
+    padding: 1rem;
     background-color: #4B6949;
     color: var(--first-color-light);
     border-radius: .5rem;
     text-align: center;
+    gap: 0;
 }
 .project--title{
     margin-bottom: var(--mb-1);
@@ -450,6 +456,7 @@ img{
     margin: var(--mb-1) 0;
 }
 .contact--description-mail{
+    color: var(--text-color);
     font-size: var(--smaller-font-size);
 }
 .contact--social{
@@ -458,7 +465,7 @@ img{
     margin: 0 var(--mb-1);
 }
 .contact--box:hover{
-    box-shadow: 0 6px 8px rgba(47, 10, 13, .25);
+    box-shadow: 0 10px 10px #4B6949;
 }
 
 .contact--inputs{
