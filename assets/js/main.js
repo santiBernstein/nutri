@@ -156,7 +156,7 @@ function validate(){
 
     send.addEventListener('click', (e)=>{
         e.preventDefault();
-        if(name.value == "" || lastname.value == "" || phone.value == "" || email.value == "" || msg.value == "" ){
+        if(name.value == "" || email.value == "" || msg.value == "" ){
             emptyerror();
         } else {
             sendmail (name.value, lastname.value, phone.value, email.value, msg.value);
