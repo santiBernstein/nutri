@@ -81,11 +81,14 @@ const swiper = new Swiper('.swiper', {
       clickable: true,
     },
     breakpoints:{
-        640:{
+        576:{
             slidesPerView: 2,
+        },
+        768:{
+            slidesPerView:3,
         },        
         1024:{
-            slidesPerView: 3,
+            slidesPerView: 4,
         },
     },     
    
