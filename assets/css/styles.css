@@ -298,6 +298,7 @@ img{
 }
 .home--img img{
     padding: 30px 10px;
+    border-radius: 50%;
 }
 .home--info{
     text-align: justify;
@@ -578,6 +579,10 @@ img{
 /*media queries*/
 
 @media screen and (min-width: 576px){
+
+    .scroll-header, .nav--menu{
+        background-color: var(--first-color-dark);
+    }
     
     .home--container{
         padding-top: 3rem;
@@ -654,9 +659,17 @@ img{
     .home--social{
         margin-top: 50px;
     }
+   
+    .especialties--data{
+        width: max-content;
+        margin: auto;
+    }
     .about-content{
         width: 300px;
         margin: auto;
+    }
+    .about--description{
+        font-size: var(--normal-font-size);
     }
     .about--img{
         width: 300px;
@@ -680,9 +693,9 @@ img{
     .nav{
         height: 3.2rem;
     }    
-    .services--container{
+    /* .services--container{
         grid-template-columns: repeat(4, 1fr);
-    }
+    } */
     .services--data{
         padding: 0.8rem 0.5rem;
     }
