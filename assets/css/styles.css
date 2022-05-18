@@ -214,7 +214,7 @@ img{
     left: 0;
     width: 65%;
     height: 3px;
-    background-color: var(--first-color-light);
+    background-color: var(--first-color-lighten);
 }
 
 /* change background header */
@@ -226,7 +226,7 @@ img{
     color: var(--first-color-dark);
 }
 .scroll-header .nav--menu{
-    background-color: var(--first-color-dark);
+    background-color: var(--first-color);
     opacity: inherit;
 }
 
@@ -299,17 +299,21 @@ img{
 .home--img img{
     padding: 30px 10px;
 }
+.home--info{
+    text-align: justify;
+}
 .home-info{
     font-weight: var(--font-bold);
 } 
 .home--social{
     display: flex;
     justify-content: space-evenly;
+    margin-top: 3.5rem;
 }
 .home--social-icon{
     width: max-content;
     font-size: 1.2rem;
-    margin-top: var(--mb-5);
+    margin-top: var(--mb-2);
     color: var(--first-color-lighten);
     border-left: 2px solid var(--first-color-lighten);
     padding-left: 5px;
@@ -364,7 +368,7 @@ img{
     padding: 1rem 1rem;
     background-color: var(--first-color);
     border-radius: .5rem;
-    text-align: center;
+    text-align: justify;
     transition: .4s;
     box-shadow: 0 4px 4px;
     margin-top: 2rem;
