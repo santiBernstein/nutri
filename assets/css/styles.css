@@ -319,6 +319,9 @@ img{
 }
 
 /*especialties*/
+.especialties{
+    height: 600px;
+}
 .especialties--container{
     margin-top: 3rem;
 }
@@ -332,7 +335,7 @@ img{
     text-align: center;
 }
 .especialties--data ul li{
-    padding: 0.2rem;
+    padding: 0.8rem;
     font-size: var(--h3-font-size);
     font-weight: var(--font-bold);
 }
@@ -358,11 +361,17 @@ img{
 
 /*about*/
 .about--data{
-    text-align: center;    
+    padding: 1rem 1rem;
+    background-color: var(--first-color);
+    border-radius: .5rem;
+    text-align: center;
+    transition: .4s;
+    box-shadow: 0 4px 4px;
+    margin-top: 2rem;
 }
 .about--description{
-    font-size: var(--h2-font-size);
-    font-weight: var(--font-semi-bold);
+    font-size: var(--h3-font-size);
+    font-weight: var(--normal-font-size);
     padding-top: .5rem;    
 }
 .about-subtitle{
