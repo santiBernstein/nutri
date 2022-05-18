@@ -294,7 +294,7 @@ img{
 }
 .home--img{
     width: 200px;
-    margin: 15px auto;
+    margin: 30px auto;
 }
 .home--img img{
     padding: 30px 10px;
@@ -316,6 +316,25 @@ img{
 }
 .home--social-icon:hover{
     color: var(--first-color-light);
+}
+
+/*especialties*/
+.especialties--container{
+    margin-top: 3rem;
+}
+.especialties--data{
+    background-color: #fff;
+    border: 5px solid var(--first-color-lighten);
+    border-radius: 0.5rem;
+}
+.especialties--data ul{
+    padding: 0.5rem;
+    text-align: center;
+}
+.especialties--data ul li{
+    padding: 0.2rem;
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-bold);
 }
 
 /*buttons*/
@@ -352,7 +371,7 @@ img{
     font-weight: var(--font-bold);
 }
 .about-content{
-    background-color: var(--text-color);
+    background-color: var(--first-color);
     color: var(--first-color-light);
     border-radius: .5rem;
     padding: 1rem 1rem;
@@ -419,7 +438,7 @@ img{
 /*recipe*/
 .recipe--content{
     display: grid;
-    background-color: var(--text-color);
+    background-color: var(--first-color);
     color: var(--first-color-light);
     border-radius: .5rem;
     padding: 2rem 1rem;
@@ -430,6 +449,10 @@ img{
     border-radius: .5rem;
     justify-self: center;
     margin-bottom: var(--mb-1);
+}
+.recipe--title{
+    color: var(--first-color-lighten);
+    font-weight: var(--font-medium);
 }
 
 .swiper-pagination{
@@ -462,6 +485,7 @@ img{
 .contact--title{
     font-size: var(--h3-font-size);
     margin: var(--mb-1) 0;
+    text-align: center;
 }
 .contact--description-mail{
     color: var(--text-color);

@@ -123,6 +123,10 @@ sr.reveal('.button',{delay: 200})
 sr.reveal('.home--data',{delay: 400})
 sr.reveal('.home--social-icon, .home--name',{interval: 200})
 
+//especialties
+sr.reveal('.especialties--data', {delay:100})
+sr.reveal('.especialties--list', {delay:200})
+
 //sr about //
 sr.reveal('.section-title',{})
 sr.reveal('.section-subtitle',{delay: 200})
