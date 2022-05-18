@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', function () {
+
 /*show menu*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
@@ -192,5 +194,7 @@ function success(){
         icon: "success",        
       });
 }
+
+}, false);
 
 
