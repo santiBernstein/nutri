@@ -406,6 +406,8 @@ img{
 }
 .services--icon{
     font-size: 3rem;
+    margin: auto;
+    padding-bottom: .5rem;
 }
 .services--title{
     font-size: var(--h3-font-size);
